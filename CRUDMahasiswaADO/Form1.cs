@@ -53,6 +53,7 @@ namespace CRUDMahasiswaADO
             ConnectDatabase();
         }
 
+        // btnLoad_Click
         private void btnLoad_Click(object sender, EventArgs e)
         {
             try
@@ -97,6 +98,7 @@ namespace CRUDMahasiswaADO
             }
         }
 
+        // btnInsert_Click
         private void btnInsert_Click(object sender, EventArgs e)
         {
             try
