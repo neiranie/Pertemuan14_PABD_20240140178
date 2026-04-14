@@ -79,7 +79,10 @@
             this.label5.Name = "label5";
             this.label5.Text = "Tanggal Lahir";
 
-
+            // dtpTanggalLahir
+            this.dtpTanggalLahir.Location = new System.Drawing.Point(130, 107);
+            this.dtpTanggalLahir.Name = "dtpTanggalLahir";
+            this.dtpTanggalLahir.Size = new System.Drawing.Size(200, 20);
 
             // label3 - Alamat
             this.label3.AutoSize = true;
