@@ -135,12 +135,14 @@
             this.btnUpdate.Text = "Mengubah Data";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 
+            // btnDelete - Menghapus Data
+            this.btnDelete.Location = new System.Drawing.Point(380, 169);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(130, 28);
+            this.btnDelete.Text = "Menghapus Data";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 
 
-            // dataGridView1
-            this.dataGridView1.Location = new System.Drawing.Point(20, 240);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(540, 200);
 
             // FormMahasiswa
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
