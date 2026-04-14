@@ -79,10 +79,7 @@
             this.label5.Name = "label5";
             this.label5.Text = "Tanggal Lahir";
 
-            // dtpTanggalLahir
-            this.dtpTanggalLahir.Location = new System.Drawing.Point(130, 107);
-            this.dtpTanggalLahir.Name = "dtpTanggalLahir";
-            this.dtpTanggalLahir.Size = new System.Drawing.Size(200, 20);
+
 
             // label3 - Alamat
             this.label3.AutoSize = true;
@@ -142,7 +139,10 @@
             this.btnDelete.Text = "Menghapus Data";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 
-
+            // dataGridView1
+            this.dataGridView1.Location = new System.Drawing.Point(20, 240);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(540, 200);
 
             // FormMahasiswa
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
