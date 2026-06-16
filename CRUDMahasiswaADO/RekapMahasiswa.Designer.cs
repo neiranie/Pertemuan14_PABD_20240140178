@@ -41,7 +41,7 @@
             // 
             // btnCetak
             // 
-            this.btnCetak.Location = new System.Drawing.Point(1109, 814);
+            this.btnCetak.Location = new System.Drawing.Point(1377, 943);
             this.btnCetak.Name = "btnCetak";
             this.btnCetak.Size = new System.Drawing.Size(127, 34);
             this.btnCetak.TabIndex = 17;
@@ -52,14 +52,14 @@
             // cmbProdi
             // 
             this.cmbProdi.FormattingEnabled = true;
-            this.cmbProdi.Location = new System.Drawing.Point(214, 124);
+            this.cmbProdi.Location = new System.Drawing.Point(284, 132);
             this.cmbProdi.Name = "cmbProdi";
             this.cmbProdi.Size = new System.Drawing.Size(429, 33);
             this.cmbProdi.TabIndex = 16;
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(1109, 124);
+            this.btnLoad.Location = new System.Drawing.Point(1179, 132);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(127, 34);
             this.btnLoad.TabIndex = 15;
@@ -70,16 +70,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(151, 187);
+            this.dataGridView1.Location = new System.Drawing.Point(60, 194);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1085, 596);
+            this.dataGridView1.Size = new System.Drawing.Size(1444, 722);
             this.dataGridView1.TabIndex = 14;
             // 
             // dtpTanggalMasuk
             // 
-            this.dtpTanggalMasuk.Location = new System.Drawing.Point(810, 127);
+            this.dtpTanggalMasuk.Location = new System.Drawing.Point(880, 135);
             this.dtpTanggalMasuk.Name = "dtpTanggalMasuk";
             this.dtpTanggalMasuk.Size = new System.Drawing.Size(276, 31);
             this.dtpTanggalMasuk.TabIndex = 13;
@@ -87,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(661, 127);
+            this.label3.Location = new System.Drawing.Point(731, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
             this.label3.TabIndex = 12;
@@ -96,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(146, 127);
+            this.label2.Location = new System.Drawing.Point(216, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 25);
             this.label2.TabIndex = 11;
@@ -105,10 +105,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(477, 53);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(519, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(445, 37);
+            this.label1.Size = new System.Drawing.Size(591, 51);
             this.label1.TabIndex = 10;
             this.label1.Text = "REKAP DATA MAHASISWA";
             // 
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 901);
+            this.ClientSize = new System.Drawing.Size(1555, 1058);
             this.Controls.Add(this.btnCetak);
             this.Controls.Add(this.cmbProdi);
             this.Controls.Add(this.btnLoad);
