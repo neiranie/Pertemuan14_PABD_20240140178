@@ -5,7 +5,7 @@ using System.Net;
 
 class DAL
 {
-    static string connectionString = $"Data Source={GetLoacalIPAddress()};Initial Catalog=DBAkademikADO;User ID=sa;Password=PasswordSA;";
+    static string connectionString = $"Data Source=LAPTOP-9BPMNG3K\\\\ANNEIRA;Initial Catalog=DBAkademikADO;User ID=sa;Password=neira291206";
 
     public string GetConnectionString()
     {
