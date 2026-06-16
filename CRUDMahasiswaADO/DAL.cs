@@ -36,8 +36,19 @@ namespace CRUDMahasiswaADO
 
         public static string GetConnectionString()
         {
-            // Sesuaikan User ID / Password / Initial Catalog dengan environment kalian.
+            // DEVELOPMENT (comment dulu):
+            // return @"Data Source=LAPTOP-9BPMNG3K\ANNEIRA;Initial Catalog=DBAkademikADO;User ID=sa;Password=neira291206";
+
+            // DEPLOY (aktifkan ini):
             return $"Data Source={GetLocalIPAddress()};Initial Catalog=DBAkademikADO;User ID=sa;Password=neira291206";
+
+            // =============================================
+            // DEPLOY (nanti, sesuai modul langkah 18-19 "Deploy Aplikasi"):
+            // Aktifkan baris di bawah ini (hapus komentar) dan beri komentar pada baris di atas,
+            // SETELAH TCP/IP diaktifkan di SQL Server Configuration Manager
+            // dan SQL Server bisa diakses dari komputer lain di jaringan yang sama.
+            // =============================================
+            // return $"Data Source={GetLocalIPAddress()};Initial Catalog=DBAkademikADO;User ID=sa;Password=neira291206";
         }
 
         // Instance method supaya tetap kompatibel dengan pemanggilan dbLogic.GetConnectionString()
@@ -58,7 +69,7 @@ namespace CRUDMahasiswaADO
                 SqlCommand cmd = new SqlCommand("sp_CountMahasiswa", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter outputParam = new SqlParameter("@pCount", SqlDbType.Int);
+                SqlParameter outputParam = new SqlParameter("@Total", SqlDbType.Int);
                 outputParam.Direction = ParameterDirection.Output;
                 cmd.Parameters.Add(outputParam);
 
@@ -191,7 +202,7 @@ namespace CRUDMahasiswaADO
                 conn.Open();
 
                 SqlCommand cmd = new SqlCommand("sp_DeleteMahasiswa", conn);
-                cmd.Parameters.AddWithValue("@pNIM", nim);
+                cmd.Parameters.AddWithValue("@NIM", nim);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 int rows = cmd.ExecuteNonQuery();

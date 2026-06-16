@@ -53,7 +53,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.mahasiswaTableAdapter = new CRUDMahasiswaADO.DBAkademikADODataSetTableAdapters.MahasiswaTableAdapter();
             this.mahasiswaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.btnResetData = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.btnTestInjection = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnRekapData = new System.Windows.Forms.Button();
@@ -61,8 +61,8 @@
             this.btnUploadGambar = new System.Windows.Forms.Button();
             this.btnCari = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnImportExcel = new System.Windows.Forms.Button();
-            this.btnImportDatabase = new System.Windows.Forms.Button();
+            this.btnImpExcel = new System.Windows.Forms.Button();
+            this.btnImpDb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBAkademikADODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -285,10 +285,9 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1555, 42);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1555, 50);
             this.bindingNavigator1.TabIndex = 18;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            this.bindingNavigator1.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -296,7 +295,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -385,15 +384,14 @@
             this.mahasiswaBindingSource1.DataMember = "Mahasiswa";
             this.mahasiswaBindingSource1.DataSource = this.dBAkademikADODataSet;
             // 
-            // btnResetData
+            // btnReset
             // 
-            this.btnResetData.Location = new System.Drawing.Point(1254, 77);
-            this.btnResetData.Margin = new System.Windows.Forms.Padding(6);
-            this.btnResetData.Name = "btnResetData";
-            this.btnResetData.Size = new System.Drawing.Size(260, 54);
-            this.btnResetData.TabIndex = 19;
-            this.btnResetData.Text = "Reset Data";
-            this.btnResetData.Click += new System.EventHandler(this.btnResetData_Click_1);
+            this.btnReset.Location = new System.Drawing.Point(1254, 77);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(6);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(260, 54);
+            this.btnReset.TabIndex = 19;
+            this.btnReset.Text = "Reset Data";
             // 
             // btnTestInjection
             // 
@@ -403,8 +401,6 @@
             this.btnTestInjection.Size = new System.Drawing.Size(260, 54);
             this.btnTestInjection.TabIndex = 20;
             this.btnTestInjection.Text = "Test";
-            this.btnTestInjection.BackColorChanged += new System.EventHandler(this.btnTestInjection_BackColorChanged);
-            this.btnTestInjection.Click += new System.EventHandler(this.btnTestInjection_Click_1);
             // 
             // lblTotal
             // 
@@ -467,33 +463,32 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // btnImportExcel
+            // btnImpExcel
             // 
-            this.btnImportExcel.Location = new System.Drawing.Point(1254, 342);
-            this.btnImportExcel.Margin = new System.Windows.Forms.Padding(6);
-            this.btnImportExcel.Name = "btnImportExcel";
-            this.btnImportExcel.Size = new System.Drawing.Size(260, 54);
-            this.btnImportExcel.TabIndex = 27;
-            this.btnImportExcel.Text = "Import form Excel";
-            this.btnImportExcel.Click += new System.EventHandler(this.btnImportExcel_Click);
+            this.btnImpExcel.Location = new System.Drawing.Point(1254, 342);
+            this.btnImpExcel.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImpExcel.Name = "btnImpExcel";
+            this.btnImpExcel.Size = new System.Drawing.Size(260, 54);
+            this.btnImpExcel.TabIndex = 27;
+            this.btnImpExcel.Text = "Import form Excel";
             // 
-            // btnImportDatabase
+            // btnImpDb
             // 
-            this.btnImportDatabase.Location = new System.Drawing.Point(1254, 408);
-            this.btnImportDatabase.Margin = new System.Windows.Forms.Padding(6);
-            this.btnImportDatabase.Name = "btnImportDatabase";
-            this.btnImportDatabase.Size = new System.Drawing.Size(260, 54);
-            this.btnImportDatabase.TabIndex = 28;
-            this.btnImportDatabase.Text = "Import form Database";
-            this.btnImportDatabase.Click += new System.EventHandler(this.btnImportDatabase_Click);
+            this.btnImpDb.Location = new System.Drawing.Point(1254, 408);
+            this.btnImpDb.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImpDb.Name = "btnImpDb";
+            this.btnImpDb.Size = new System.Drawing.Size(260, 54);
+            this.btnImpDb.TabIndex = 28;
+            this.btnImpDb.Text = "Import form Database";
+            this.btnImpDb.Click += new System.EventHandler(this.btnImportDatabase_Click);
             // 
             // FormMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1555, 1058);
-            this.Controls.Add(this.btnImportDatabase);
-            this.Controls.Add(this.btnImportExcel);
+            this.Controls.Add(this.btnImpDb);
+            this.Controls.Add(this.btnImpExcel);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnCari);
             this.Controls.Add(this.btnUploadGambar);
@@ -501,7 +496,7 @@
             this.Controls.Add(this.btnRekapData);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnTestInjection);
-            this.Controls.Add(this.btnResetData);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNIM);
@@ -576,7 +571,7 @@
         private System.Windows.Forms.BindingSource mahasiswaBindingSource;
         private DBAkademikADODataSetTableAdapters.MahasiswaTableAdapter mahasiswaTableAdapter;
         private System.Windows.Forms.BindingSource mahasiswaBindingSource1;
-        private System.Windows.Forms.Button btnResetData;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnTestInjection;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Button btnRekapData;
@@ -584,7 +579,7 @@
         private System.Windows.Forms.Button btnUploadGambar;
         private System.Windows.Forms.Button btnCari;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnImportExcel;
-        private System.Windows.Forms.Button btnImportDatabase;
+        private System.Windows.Forms.Button btnImpExcel;
+        private System.Windows.Forms.Button btnImpDb;
     }
 }
